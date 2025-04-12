@@ -1,8 +1,8 @@
 <?php
 
     $servername = 'localhost';
-    $username = 'avconexp_avconexpo_db';
-    $password = 'Auctech@123';
+    $username = 'root';
+    $password = '';
     $database = "avconexp_avconexpo_db";
 
     $con = new mysqli($servername, $username, $password, $database);
