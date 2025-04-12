@@ -38,6 +38,12 @@
 
 
     <style>
+        .intro-wrapper.style3 .intro-content {
+            position: relative;
+            z-index: 5;
+            padding: 0px 0 0px;
+        }
+
         .blog-card.style1 .thumb {
             height: 200px;
             overflow: hidden;
