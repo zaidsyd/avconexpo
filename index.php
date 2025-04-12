@@ -43,6 +43,11 @@
             overflow: hidden;
         }
 
+        .service-card.style1 .thumb img {
+            width: 100%;
+            height: 200px;
+        }
+
         .swiper-wrapper {
             padding-bottom: 35px;
         }
@@ -431,7 +436,8 @@
                         <div class="col-xl-4 col-md-6">
                             <div class="service-card style1 wow fadeInUp" data-tilt data-tilt-max="15"
                                 data-wow-delay="0.2s">
-                                <div class="thumb"><img src="assets/img/service/Business & Technical Cons.jpg" alt="thumb">
+                                <div class="thumb"><img src="assets/img/service/Business & Technical Cons.jpg"
+                                        alt="thumb">
                                 </div>
                                 <div class="content">
                                     <h4><a href="business-technical-consulting.php">Business & Technical Consultancy</a>
@@ -469,7 +475,8 @@
                         <div class="col-xl-4 col-md-6">
                             <div class="service-card style1 wow fadeInUp" data-tilt data-tilt-max="15"
                                 data-wow-delay="0.2s">
-                                <div class="thumb"><img src="assets/img/service/Trading & Sourcing.jpg" alt="thumb"> </div>
+                                <div class="thumb"><img src="assets/img/service/Trading & Sourcing.jpg" alt="thumb">
+                                </div>
                                 <div class="content">
                                     <h4><a href="trading-sourcing.php">Trading & Sourcing</a></h4>
                                     <p class="text"> Avconexpo offers its clients comprehensive and satisfying sourcing
@@ -558,7 +565,7 @@
                                 </div>
                             </div>
                         </div>
-                       
+
                         <div class="col-xl-4 col-md-6">
                             <div class="service-card style1 wow fadeInUp" data-tilt data-tilt-max="15"
                                 data-wow-delay="0.2s">
@@ -598,7 +605,7 @@
                                 </div>
                             </div>
                         </div>
-                       
+
 
                     </div>
                 </div>
