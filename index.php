@@ -506,7 +506,7 @@
                         <div class="col-xl-4 col-md-6">
                             <div class="service-card style1 wow fadeInUp" data-tilt data-tilt-max="15"
                                 data-wow-delay="0.2s">
-                                <div class="thumb"><img src="assets/img/service/sStartup Acc.png" alt="thumb">
+                                <div class="thumb"><img src="assets/img/service/Startup Acc.png" alt="thumb">
                                 </div>
                                 <div class="content">
                                     <h4><a href="startup-accelerator.php">Startup Accelerator</a></h4>
@@ -562,7 +562,7 @@
                         <div class="col-xl-4 col-md-6">
                             <div class="service-card style1 wow fadeInUp" data-tilt data-tilt-max="15"
                                 data-wow-delay="0.2s">
-                                <div class="thumb"><img src="assets/img/service/agriculture-and-hori..._imresizer.jpg"
+                                <div class="thumb"><img src="assets/img/agriculture-and-hori..._imresizer.jpg"
                                         alt="thumb"> </div>
                                 <div class="content">
                                     <h4><a href="agriculture-ecotourism.php">Agriculture & Horticulture, Ecotourism</a>
@@ -583,7 +583,7 @@
                         <div class="col-xl-4 col-md-6">
                             <div class="service-card style1 wow fadeInUp" data-tilt data-tilt-max="15"
                                 data-wow-delay="0.2s">
-                                <div class="thumb"><img src="assets/img/service/talent-management_imresizer.jpg" alt="thumb">
+                                <div class="thumb"><img src="assets/img/talent-management_imresizer.jpg" alt="thumb">
                                 </div>
                                 <div class="content">
                                     <h4><a href="talent-management.php">Talent Management</a></h4>
