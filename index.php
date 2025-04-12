@@ -33,53 +33,72 @@
     <link rel="stylesheet" href="assets/css/nice-select.css" />
     <!--<< Main.css >>-->
     <link rel="stylesheet" href="assets/css/main.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.min.css" />
 
 
     <style>
+        .blog-card.style1 .thumb {
+            height: 200px;
+            overflow: hidden;
+        }
 
-    
         .swiper-wrapper {
             padding-bottom: 35px;
         }
-        .swiper-horizontal>.swiper-pagination-bullets,.swiper-pagination-bullets.swiper-pagination-horizontal,.swiper-pagination-custom,.swiper-pagination-fraction {
+
+        .swiper-horizontal>.swiper-pagination-bullets,
+        .swiper-pagination-bullets.swiper-pagination-horizontal,
+        .swiper-pagination-custom,
+        .swiper-pagination-fraction {
             bottom: -4px !important;
         }
+
         .swiper-pagination-bullet {
-          width: 10px;
-          height: 10px;
-          background: #999;
-          opacity: 1;
-          margin: 0 4px !important;
-          border-radius: 50%;
+            width: 10px;
+            height: 10px;
+            background: #999;
+            opacity: 1;
+            margin: 0 4px !important;
+            border-radius: 50%;
         }
+
         .swiper-pagination-bullet-active {
-          background: #ff5722;
+            background: #ff5722;
         }
-        .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after, .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
+
+        .swiper-button-next:after,
+        .swiper-rtl .swiper-button-prev:after,
+        .swiper-button-prev:after,
+        .swiper-rtl .swiper-button-next:after {
             font-size: 30px;
             color: #ff5722;
         }
-        .blog-card{
+
+        .blog-card {
             background: #ececece3;
-             padding:10px;
+            padding: 10px;
         }
+
         .blog-card.style1 .thumb img {
-            object-fit:cover;
+            object-fit: cover;
         }
-        .swiper-slide div  .blog-card.style1 .thumb img{
-            height:auto !important;
+
+        .swiper-slide div .blog-card.style1 .thumb img {
+            height: auto !important;
         }
-        .blog-card .content{
-            display:flex;
-            align-items:center;
-            flex-direction:column;
-            
+
+        .blog-card .content {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
         }
-        .blog-card .content p{
-           min-height:160px;
+
+        .blog-card .content p {
+            min-height: 160px;
         }
-        
+
         .about-service-meta .meta-box::before {
             display: none;
         }
@@ -87,7 +106,7 @@
         .text-justify {
             text-align: justify;
         }
-        
+
         .hero-4 .hero-content h1 {
             font-size: 45px;
         }
@@ -103,7 +122,7 @@
 
         .blog-card.style1 .thumb img {
             width: 100%;
-            height: 200px;
+            height: 200px !important;
         }
 
         .blog-card.style1 .blog-content .content h4 a {
@@ -135,27 +154,30 @@
             background-color: #fff;
             box-shadow: none;
         }
+
         .intro-wrapper.style3 .intro-content h1 {
             letter-spacing: normal !important;
         }
-        
+
         .intro-wrapper.style3 .intro-content h1 {
             min-height: 200px;
         }
-        
+
         .intro-wrapper.style3 .intro-content .big-text {
-            opacity:1;
+            opacity: 1;
             -webkit-text-stroke: 2px #ffffff3d;
         }
+
         .intro-section .array-button::before {
             left: 139px;
         }
-        
+
         @media (min-width:1500px) {
             .intro-container-wrapper.style3 .slider-image {
                 height: 100vh !important;
             }
         }
+
         @media screen and (min-width: 1200px) {
             .submenu {
                 min-width: 340px !important;
@@ -167,49 +189,58 @@
                 font-size: 15px;
             }
         }
+
         @media (min-width: 600px) and (max-width: 1700px) {
             .intro-wrapper.style3 .intro-content h1 {
                 font-size: 56px;
             }
+
             .intro-wrapper.style3 .intro-content h1 {
                 position: absolute;
                 top: 210px;
-                min-height:300px;
+                min-height: 300px;
             }
+
             .intro-wrapper.style3 .intro-content {
-                height:700px;
+                height: 700px;
                 padding: 0px;
             }
-             .intro-wrapper.style3 .intro-content img{
+
+            .intro-wrapper.style3 .intro-content img {
                 position: absolute;
                 top: 410px;
-             }
-          }
+            }
+        }
+
         @media (max-width: 1199px) {
             .intro-section .array-button {
-                 display: block; 
+                display: block;
             }
+
             .intro-section .array-button {
-                position:relative;
-                margin:0px;
+                position: relative;
+                margin: 0px;
                 bottom: 50px;
                 left: auto;
             }
-            .intro-section .array-button .array-prevs, .intro-section .array-button .array-nexts{
-                position:absolute;
-                font-size:13px;
+
+            .intro-section .array-button .array-prevs,
+            .intro-section .array-button .array-nexts {
+                position: absolute;
+                font-size: 13px;
             }
-            .intro-section .array-button .array-prevs{
-                left:10px;
+
+            .intro-section .array-button .array-prevs {
+                left: 10px;
             }
-             .intro-section .array-button .array-nexts{
-                right:10px;
+
+            .intro-section .array-button .array-nexts {
+                right: 10px;
             }
-           
+
         }
-        
-  </style>
-  
+    </style>
+
 </head>
 
 <body>
@@ -239,8 +270,8 @@
                                             <?php echo ($row['details']); ?>
 
                                         </h1>
-                                        <img src="assets/img/icon/hero3ArrowIcon.svg" alt="icon" data-animation="fadeInUp"
-                                          />
+                                        <img src="assets/img/icon/hero3ArrowIcon.svg" alt="icon"
+                                            data-animation="fadeInUp" />
                                         <span class="big-text">AVCONEXPO</span>
 
 
@@ -253,8 +284,11 @@
             </div>
         </div>
         <div class="array-button">
-            <button class="array-prevs"><img width="20" height="20" src="https://img.icons8.com/ios-filled/FFFFFF/long-arrow-left.png" alt="arrow-left"/>Preview</button>
-            <button class="array-nexts">Next<img width="20" height="20" src="https://img.icons8.com/ios-filled/FFFFFF/long-arrow-right.png" alt="arrow-right"/></button>
+            <button class="array-prevs"><img width="20" height="20"
+                    src="https://img.icons8.com/ios-filled/FFFFFF/long-arrow-left.png"
+                    alt="arrow-left" />Preview</button>
+            <button class="array-nexts">Next<img width="20" height="20"
+                    src="https://img.icons8.com/ios-filled/FFFFFF/long-arrow-right.png" alt="arrow-right" /></button>
         </div>
     </section>
 
@@ -397,10 +431,14 @@
                         <div class="col-xl-4 col-md-6">
                             <div class="service-card style1 wow fadeInUp" data-tilt data-tilt-max="15"
                                 data-wow-delay="0.2s">
-                                <div class="thumb"><img src="assets/img/service/serviceCardThumb1_1.jpg" alt="thumb"> </div>
+                                <div class="thumb"><img src="assets/img/service/serviceCardThumb1_1.jpg" alt="thumb">
+                                </div>
                                 <div class="content">
-                                    <h4><a href="business-technical-consulting.php">Business & Technical Consultancy</a></h4>
-                                    <p class="text"> At AVCONEXPO, we offer expert Business & Technical Consultancy services, helping  organizations optimize their operations, strategies, and technical processes.</p>
+                                    <h4><a href="business-technical-consulting.php">Business & Technical Consultancy</a>
+                                    </h4>
+                                    <p class="text"> At AVCONEXPO, we offer expert Business & Technical Consultancy
+                                        services, helping organizations optimize their operations, strategies, and
+                                        technical processes.</p>
                                     <div class="icon"> <i class="icon-serviceIcon1_1"></i> </div>
                                 </div>
                                 <div class="link-meta">
@@ -413,10 +451,12 @@
                         <div class="col-xl-4 col-md-6">
                             <div class="service-card style1 wow fadeInUp" data-tilt data-tilt-max="15"
                                 data-wow-delay="0.2s">
-                                <div class="thumb"><img src="assets/img/service/serviceCardThumb1_2.jpg" alt="thumb"> </div>
+                                <div class="thumb"><img src="assets/img/service/serviceCardThumb1_2.jpg" alt="thumb">
+                                </div>
                                 <div class="content">
                                     <h4><a href="project-management.php">Project Management</a></h4>
-                                    <p class="text"> At AVCONEXPO, we provide end-to-end project management solutions, ensuring seamless execution from concept to completion.</p>
+                                    <p class="text"> At AVCONEXPO, we provide end-to-end project management solutions,
+                                        ensuring seamless execution from concept to completion.</p>
                                     <div class="icon"> <i class="icon-serviceIcon1_1"></i> </div>
                                 </div>
                                 <div class="link-meta">
@@ -432,7 +472,9 @@
                                 <div class="thumb"><img src="assets/img/trading&sourcing.png" alt="thumb"> </div>
                                 <div class="content">
                                     <h4><a href="trading-sourcing.php">Trading & Sourcing</a></h4>
-                                    <p class="text"> Avconexpo offers its clients comprehensive and satisfying sourcing solutions, with the help of its well-connected network of manufacturing companies and infrastructure.</p>
+                                    <p class="text"> Avconexpo offers its clients comprehensive and satisfying sourcing
+                                        solutions, with the help of its well-connected network of manufacturing
+                                        companies and infrastructure.</p>
                                     <div class="icon"> <i class="icon-serviceIcon1_1"></i> </div>
                                 </div>
                                 <div class="link-meta">
@@ -445,10 +487,13 @@
                         <div class="col-xl-4 col-md-6">
                             <div class="service-card style1 wow fadeInUp" data-tilt data-tilt-max="15"
                                 data-wow-delay="0.2s">
-                                <div class="thumb"><img src="assets/img/service/serviceCardThumb1_3.jpg" alt="thumb"> </div>
+                                <div class="thumb"><img src="assets/img/service/serviceCardThumb1_3.jpg" alt="thumb">
+                                </div>
                                 <div class="content">
                                     <h4><a href="architecture-design.php">Architecture & Designing</a></h4>
-                                    <p class="text">Our expert architects and designers focus on creating modern, innovative, and efficient spaces that align with our clients' visions and functional requirements.</p>
+                                    <p class="text">Our expert architects and designers focus on creating modern,
+                                        innovative, and efficient spaces that align with our clients' visions and
+                                        functional requirements.</p>
                                     <div class="icon"> <i class="icon-serviceIcon1_1"></i> </div>
                                 </div>
                                 <div class="link-meta">
@@ -461,10 +506,12 @@
                         <div class="col-xl-4 col-md-6">
                             <div class="service-card style1 wow fadeInUp" data-tilt data-tilt-max="15"
                                 data-wow-delay="0.2s">
-                                <div class="thumb"><img src="assets/img/service/serviceCardThumb1_4.jpg" alt="thumb"> </div>
+                                <div class="thumb"><img src="assets/img/service/serviceCardThumb1_4.jpg" alt="thumb">
+                                </div>
                                 <div class="content">
                                     <h4><a href="startup-accelerator.php">Startup Accelerator</a></h4>
-                                    <p class="text"> At AVCONEXPO, we empower startups and entrepreneurs with strategic guidance, funding support, and essential business development resources.</p>
+                                    <p class="text"> At AVCONEXPO, we empower startups and entrepreneurs with strategic
+                                        guidance, funding support, and essential business development resources.</p>
                                     <div class="icon"> <i class="icon-serviceIcon1_1"></i> </div>
                                 </div>
                                 <div class="link-meta">
@@ -477,10 +524,13 @@
                         <div class="col-xl-4 col-md-6">
                             <div class="service-card style1 wow fadeInUp" data-tilt data-tilt-max="15"
                                 data-wow-delay="0.2s">
-                                <div class="thumb"><img src="assets/img/service/serviceCardThumb1_5.jpg" alt="thumb"> </div>
+                                <div class="thumb"><img src="assets/img/service/serviceCardThumb1_5.jpg" alt="thumb">
+                                </div>
                                 <div class="content">
                                     <h4><a href="reviving-sick-industries.php">Reviving Sick Industries</a></h4>
-                                    <p class="text">AVCONEXPO revives struggling industries by implementing strategic interventions, operational restructuring, and financial turnaround solutions.</p>
+                                    <p class="text">AVCONEXPO revives struggling industries by implementing strategic
+                                        interventions, operational restructuring, and financial turnaround solutions.
+                                    </p>
                                     <div class="icon"> <i class="icon-serviceIcon1_1"></i> </div>
                                 </div>
                                 <div class="link-meta">
@@ -493,10 +543,12 @@
                         <div class="col-xl-4 col-md-6">
                             <div class="service-card style1 wow fadeInUp" data-tilt data-tilt-max="15"
                                 data-wow-delay="0.2s">
-                                <div class="thumb"><img src="assets/img/waste-management_imresizer.jpg" alt="thumb"> </div>
+                                <div class="thumb"><img src="assets/img/waste-management_imresizer.jpg" alt="thumb">
+                                </div>
                                 <div class="content">
                                     <h4><a href="waste-management.php">Waste Management</a></h4>
-                                    <p class="text"> At AVCONEXPO, we are committed to sustainable waste management solutions, ensuring environmental responsibility and resource efficiency.</p>
+                                    <p class="text"> At AVCONEXPO, we are committed to sustainable waste management
+                                        solutions, ensuring environmental responsibility and resource efficiency.</p>
                                     <div class="icon"> <i class="icon-serviceIcon1_1"></i> </div>
                                 </div>
                                 <div class="link-meta">
@@ -525,10 +577,14 @@
                         <div class="col-xl-4 col-md-6">
                             <div class="service-card style1 wow fadeInUp" data-tilt data-tilt-max="15"
                                 data-wow-delay="0.2s">
-                                <div class="thumb"><img src="assets/img/agriculture-and-hori..._imresizer.jpg" alt="thumb"> </div>
+                                <div class="thumb"><img src="assets/img/agriculture-and-hori..._imresizer.jpg"
+                                        alt="thumb"> </div>
                                 <div class="content">
-                                    <h4><a href="agriculture-ecotourism.php">Agriculture & Horticulture, Ecotourism</a></h4>
-                                    <p class="text"> AVCONEXPO promotes sustainable agriculture and horticulture while encouraging eco-friendly tourism practices that protect the environment and empower local communities.</p>
+                                    <h4><a href="agriculture-ecotourism.php">Agriculture & Horticulture, Ecotourism</a>
+                                    </h4>
+                                    <p class="text"> AVCONEXPO promotes sustainable agriculture and horticulture while
+                                        encouraging eco-friendly tourism practices that protect the environment and
+                                        empower local communities.</p>
                                     <div class="icon"> <i class="icon-serviceIcon1_1"></i> </div>
                                 </div>
                                 <div class="link-meta">
@@ -542,10 +598,12 @@
                         <div class="col-xl-4 col-md-6">
                             <div class="service-card style1 wow fadeInUp" data-tilt data-tilt-max="15"
                                 data-wow-delay="0.2s">
-                                <div class="thumb"><img src="assets/img/talent-management_imresizer.jpg" alt="thumb"> </div>
+                                <div class="thumb"><img src="assets/img/talent-management_imresizer.jpg" alt="thumb">
+                                </div>
                                 <div class="content">
                                     <h4><a href="talent-management.php">Talent Management</a></h4>
-                                    <p class="text"> At AVCONEXPO, we specialize in identifying, developing, and retaining top talent to drive organizational success and long-term growth.</p>
+                                    <p class="text"> At AVCONEXPO, we specialize in identifying, developing, and
+                                        retaining top talent to drive organizational success and long-term growth.</p>
                                     <div class="icon"> <i class="icon-serviceIcon1_1"></i> </div>
                                 </div>
                                 <div class="link-meta">
@@ -571,7 +629,7 @@
                         <!--        </div>-->
                         <!--    </div>-->
                         <!--</div>-->
-                        
+
                     </div>
                 </div>
             </div>
@@ -643,206 +701,223 @@
                             <img src="assets/img/icon/subTitleIcon.svg" alt="icon" />Our Sectors
                         </span>
                         <h2 class="wow fadeInUp" data-wow-delay=".3s">
-                         Sectors We Specialize In
+                            Sectors We Specialize In
                         </h2>
                     </div>
                     <!-- Slider Container -->
                     <div class="swiper myBlogSlider">
-                      <div class="swiper-wrapper">
-                    
-                        <!-- Slider-->
-                        
-                        <div class="swiper-slide">
-                          <div class="">
-                              <div class="blog-card style1 wow fadeInUp" data-wow-delay="0.3s">
-                                  <div class="thumb img-shine">
-                                      <img src="assets/img/service/sugar sector.jpg" alt="thumb" />
-                                  </div>
-                                  <div class="content mt-3">
-                                    <h4>
-                                         Sugar & Distillery
-                                    </h4>
-                                    <p class="text mt-3 text-justify">
-                                        Our expertise helps sugar mills and distilleries achieve higher efficiency,
-                                        reduce waste, and boost profitability while maintaining environmental
-                                        responsibility.
-                                    </p>
+                        <div class="swiper-wrapper">
+
+                            <!-- Slider-->
+
+                            <div class="swiper-slide">
+                                <div class="">
+                                    <div class="blog-card style1 wow fadeInUp" data-wow-delay="0.3s">
+                                        <div class="thumb img-shine">
+                                            <img src="assets/img/service/sugar sector.jpg" alt="thumb" />
+                                        </div>
+                                        <div class="content mt-3">
+                                            <h4>
+                                                Sugar & Distillery
+                                            </h4>
+                                            <p class="text mt-3 text-justify">
+                                                Our expertise helps sugar mills and distilleries achieve higher
+                                                efficiency,
+                                                reduce waste, and boost profitability while maintaining environmental
+                                                responsibility.
+                                            </p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                          </div>
-                        </div>
-                    
-                        <div class="swiper-slide">
-                          <div class="">
-                            <div class="blog-card style1 wow fadeInUp" data-wow-delay="0.3s">
-                              <div class="thumb img-shine">
-                                 <img src="assets/img/service/dairy industry.jpeg" alt="thumb" />
-                              </div>
-                              <div class="content mt-3">
-                                    <h4>
-                                          Dairy Industry
-                                    </h4>
-                                    <p class="text mt-3 text-justify">
-                                        At AVCONEXPO, we provide end-to-end solutions to enhance efficiency, hygiene,
-                                        and productivity in the Dairy Industry. Our expertise ensures modern,
-                                        sustainable, and profitable dairy operations.
-                                    </p>
+
+                            <div class="swiper-slide">
+                                <div class="">
+                                    <div class="blog-card style1 wow fadeInUp" data-wow-delay="0.3s">
+                                        <div class="thumb img-shine">
+                                            <img src="assets/img/service/dairy industry.jpeg" alt="thumb" />
+                                        </div>
+                                        <div class="content mt-3">
+                                            <h4>
+                                                Dairy Industry
+                                            </h4>
+                                            <p class="text mt-3 text-justify">
+                                                At AVCONEXPO, we provide end-to-end solutions to enhance efficiency,
+                                                hygiene,
+                                                and productivity in the Dairy Industry. Our expertise ensures modern,
+                                                sustainable, and profitable dairy operations.
+                                            </p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                          </div>
-                        </div>
-                        
-                        <div class="swiper-slide">
-                          <div class="">
-                            <div class="blog-card style1 wow fadeInUp" data-wow-delay="0.3s">
-                              <div class="thumb img-shine">
-                                 <img src="assets/img/service/cement industry.jpg" alt="thumb" />
-                              </div>
-                              <div class="content mt-3">
-                                    <h4>
-                                         Cement Industry
-                                    </h4>
-                                    <p class="text mt-3 text-justify">
-                                        With AVCONEXPO's expertise, cement manufacturers can achieve higher productivity, lower environmental impact, and greater profitability.
-                                    </p>
+
+                            <div class="swiper-slide">
+                                <div class="">
+                                    <div class="blog-card style1 wow fadeInUp" data-wow-delay="0.3s">
+                                        <div class="thumb img-shine">
+                                            <img src="assets/img/service/cement industry.jpg" alt="thumb" />
+                                        </div>
+                                        <div class="content mt-3">
+                                            <h4>
+                                                Cement Industry
+                                            </h4>
+                                            <p class="text mt-3 text-justify">
+                                                With AVCONEXPO's expertise, cement manufacturers can achieve higher
+                                                productivity, lower environmental impact, and greater profitability.
+                                            </p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                          </div>
-                        </div>
-                    
-                        <div class="swiper-slide">
-                          <div class="">
-                            <div class="blog-card style1 wow fadeInUp" data-wow-delay="0.3s">
-                              <div class="thumb img-shine">
-                                 <img src="assets/img/service/Beverages Industry.png" alt="thumb" />
-                              </div>
-                              <div class="content mt-3">
-                                    <h4>
-                                         Beverages Industry
-                                    </h4>
-                                    <p class="text mt-3 text-justify">
-                                        At AVCONEXPO, we provide cutting-edge solutions for the Beverages Industry, ensuring quality, efficiency, and sustainability in production and distribution.
-                                    </p>
+
+                            <div class="swiper-slide">
+                                <div class="">
+                                    <div class="blog-card style1 wow fadeInUp" data-wow-delay="0.3s">
+                                        <div class="thumb img-shine">
+                                            <img src="assets/img/service/Beverages Industry.png" alt="thumb" />
+                                        </div>
+                                        <div class="content mt-3">
+                                            <h4>
+                                                Beverages Industry
+                                            </h4>
+                                            <p class="text mt-3 text-justify">
+                                                At AVCONEXPO, we provide cutting-edge solutions for the Beverages
+                                                Industry, ensuring quality, efficiency, and sustainability in production
+                                                and distribution.
+                                            </p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                          </div>
-                        </div>
-                        
-                        <div class="swiper-slide">
-                          <div class="">
-                            <div class="blog-card style1 wow fadeInUp" data-wow-delay="0.3s">
-                              <div class="thumb img-shine">
-                                 <img src="assets/img/service/edible oil sector.webp" alt="thumb" />
-                              </div>
-                              <div class="content mt-3">
-                                    <h4>
-                                         Edible Oil Industry
-                                    </h4>
-                                    <p class="text mt-3 text-justify">
-                                        At AVCONEXPO, we provide end-to-end solutions for the Edible Oil Industry, focusing on efficiency, quality, and sustainability in production and supply.
-                                    </p>
+
+                            <div class="swiper-slide">
+                                <div class="">
+                                    <div class="blog-card style1 wow fadeInUp" data-wow-delay="0.3s">
+                                        <div class="thumb img-shine">
+                                            <img src="assets/img/service/edible oil sector.webp" alt="thumb" />
+                                        </div>
+                                        <div class="content mt-3">
+                                            <h4>
+                                                Edible Oil Industry
+                                            </h4>
+                                            <p class="text mt-3 text-justify">
+                                                At AVCONEXPO, we provide end-to-end solutions for the Edible Oil
+                                                Industry, focusing on efficiency, quality, and sustainability in
+                                                production and supply.
+                                            </p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                          </div>
-                        </div>
-                        
-                        <div class="swiper-slide">
-                          <div class="">
-                            <div class="blog-card style1 wow fadeInUp" data-wow-delay="0.3s">
-                              <div class="thumb img-shine">
-                                 <img src="assets/img/service/paper and pulp industry.jpg" alt="thumb" />
-                              </div>
-                              <div class="content mt-3">
-                                    <h4>
-                                         Paper and Pulp Industry
-                                    </h4>
-                                    <p class="text mt-3 text-justify">
-                                       At AVCONEXPO, we deliver innovative and sustainable solutions for the Paper and Pulp Industry, enhancing efficiency, quality, and environmental responsibility.
-                                    </p>
+
+                            <div class="swiper-slide">
+                                <div class="">
+                                    <div class="blog-card style1 wow fadeInUp" data-wow-delay="0.3s">
+                                        <div class="thumb img-shine">
+                                            <img src="assets/img/service/paper and pulp industry.jpg" alt="thumb" />
+                                        </div>
+                                        <div class="content mt-3">
+                                            <h4>
+                                                Paper and Pulp Industry
+                                            </h4>
+                                            <p class="text mt-3 text-justify">
+                                                At AVCONEXPO, we deliver innovative and sustainable solutions for the
+                                                Paper and Pulp Industry, enhancing efficiency, quality, and
+                                                environmental responsibility.
+                                            </p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                          </div>
-                        </div>
-                        
-                        <div class="swiper-slide">
-                          <div class="">
-                            <div class="blog-card style1 wow fadeInUp" data-wow-delay="0.3s">
-                              <div class="thumb img-shine">
-                                 <img src="assets/img/service/packaging industry.jpg" alt="thumb" />
-                              </div>
-                              <div class="content mt-3">
-                                    <h4>
-                                         Packaging Industry
-                                    </h4>
-                                    <p class="text mt-3 text-justify">
-                                        At AVCONEXPO, we deliver advanced solutions for the Packaging Industry, enhancing efficiency, sustainability, and innovation in packaging design and production.
-                                    </p>
+
+                            <div class="swiper-slide">
+                                <div class="">
+                                    <div class="blog-card style1 wow fadeInUp" data-wow-delay="0.3s">
+                                        <div class="thumb img-shine">
+                                            <img src="assets/img/service/packaging industry.jpg" alt="thumb" />
+                                        </div>
+                                        <div class="content mt-3">
+                                            <h4>
+                                                Packaging Industry
+                                            </h4>
+                                            <p class="text mt-3 text-justify">
+                                                At AVCONEXPO, we deliver advanced solutions for the Packaging Industry,
+                                                enhancing efficiency, sustainability, and innovation in packaging design
+                                                and production.
+                                            </p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                          </div>
-                        </div>
-                        
-                        <div class="swiper-slide">
-                          <div class="">
-                            <div class="blog-card style1 wow fadeInUp" data-wow-delay="0.3s">
-                              <div class="thumb img-shine">
-                                 <img src="assets/img/service/serviceCardThumb1_1.jpg" alt="thumb" />
-                              </div>
-                              <div class="content mt-3">
-                                    <h4>
-                                         Utilities & Infrastructure
-                                    </h4>
-                                    <p class="text mt-3 text-justify">
-                                       At AVCONEXPO, we focus on developing, optimizing, and modernizing utilities and infrastructure, ensuring sustainable growth and efficient resource management for long-term success.
-                                    </p>
+
+                            <div class="swiper-slide">
+                                <div class="">
+                                    <div class="blog-card style1 wow fadeInUp" data-wow-delay="0.3s">
+                                        <div class="thumb img-shine">
+                                            <img src="assets/img/service/serviceCardThumb1_1.jpg" alt="thumb" />
+                                        </div>
+                                        <div class="content mt-3">
+                                            <h4>
+                                                Utilities & Infrastructure
+                                            </h4>
+                                            <p class="text mt-3 text-justify">
+                                                At AVCONEXPO, we focus on developing, optimizing, and modernizing
+                                                utilities and infrastructure, ensuring sustainable growth and efficient
+                                                resource management for long-term success.
+                                            </p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                          </div>
-                        </div>
-                        
-                        <div class="swiper-slide">
-                          <div class="">
-                            <div class="blog-card style1 wow fadeInUp" data-wow-delay="0.3s">
-                              <div class="thumb img-shine">
-                                 <img src="assets/img/service/serviceCardThumb1_1.jpg" alt="thumb" />
-                              </div>
-                              <div class="content mt-3">
-                                    <h4>
-                                        FMCG
-                                    </h4>
-                                    <p class="text mt-3 text-justify">
-                                        At AVCONEXPO, we empower FMCG businesses by optimizing production processes, streamlining supply chains, and enhancing market competitiveness through innovative solutions and strategic consulting
-                                    </p>
+
+                            <div class="swiper-slide">
+                                <div class="">
+                                    <div class="blog-card style1 wow fadeInUp" data-wow-delay="0.3s">
+                                        <div class="thumb img-shine">
+                                            <img src="assets/img/service/serviceCardThumb1_1.jpg" alt="thumb" />
+                                        </div>
+                                        <div class="content mt-3">
+                                            <h4>
+                                                FMCG
+                                            </h4>
+                                            <p class="text mt-3 text-justify">
+                                                At AVCONEXPO, we empower FMCG businesses by optimizing production
+                                                processes, streamlining supply chains, and enhancing market
+                                                competitiveness through innovative solutions and strategic consulting
+                                            </p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                          </div>
-                        </div>
-                        
-                        <div class="swiper-slide">
-                          <div class="">
-                            <div class="blog-card style1 wow fadeInUp" data-wow-delay="0.3s">
-                              <div class="thumb img-shine">
-                                 <img src="assets/img/service/Waste and wastewater.webp" alt="thumb" />
-                              </div>
-                              <div class="content mt-3">
-                                    <h4>
-                                         Water & Wastewater Treatment
-                                    </h4>
-                                    <p class="text mt-3 text-justify">
-                                       At AVCONEXPO, we provide end-to-end water treatment solutions, from river rejuvenation to desalination, ensuring efficient and sustainable water management.
-                                    </p>
+
+                            <div class="swiper-slide">
+                                <div class="">
+                                    <div class="blog-card style1 wow fadeInUp" data-wow-delay="0.3s">
+                                        <div class="thumb img-shine">
+                                            <img src="assets/img/service/Waste and wastewater.webp" alt="thumb" />
+                                        </div>
+                                        <div class="content mt-3">
+                                            <h4>
+                                                Water & Wastewater Treatment
+                                            </h4>
+                                            <p class="text mt-3 text-justify">
+                                                At AVCONEXPO, we provide end-to-end water treatment solutions, from
+                                                river rejuvenation to desalination, ensuring efficient and sustainable
+                                                water management.
+                                            </p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                          </div>
+
                         </div>
-                        
-                      </div>
-                    
-                    
-                      <!-- Swiper Pagination & Navigation -->
-                      <div class="swiper-pagination"></div>
-                      <div class="swiper-button-next"></div>
-                      <div class="swiper-button-prev"></div>
+
+
+                        <!-- Swiper Pagination & Navigation -->
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
                     </div>
                 </div>
             </div>
@@ -1552,35 +1627,35 @@
         });
     </script>
     <script>
-         var swiper = new Swiper(".myBlogSlider", {
-          slidesPerView: 1,
-          spaceBetween: 20,
-          loop: true,
-          autoplay: {
-            delay: 3000,
-            disableOnInteraction: false,
-          },
-          pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-          },
-          navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-          },
-          breakpoints: {
-            576: {
-              slidesPerView: 2
+        var swiper = new Swiper(".myBlogSlider", {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            loop: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
             },
-            800: {
-              slidesPerView: 3
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
             },
-            1500: {
-              slidesPerView: 4
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                576: {
+                    slidesPerView: 2
+                },
+                800: {
+                    slidesPerView: 3
+                },
+                1500: {
+                    slidesPerView: 4
+                }
             }
-          }
         });
-        
+
     </script>
 
 </body>
