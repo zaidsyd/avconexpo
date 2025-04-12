@@ -656,7 +656,7 @@
                           <div class="">
                               <div class="blog-card style1 wow fadeInUp" data-wow-delay="0.3s">
                                   <div class="thumb img-shine">
-                                      <img src="assets/img/service/serviceCardThumb1_1.jpg" alt="thumb" />
+                                      <img src="assets/img/service/sugar sector.jpg" alt="thumb" />
                                   </div>
                                   <div class="content mt-3">
                                     <h4>
@@ -696,7 +696,7 @@
                           <div class="">
                             <div class="blog-card style1 wow fadeInUp" data-wow-delay="0.3s">
                               <div class="thumb img-shine">
-                                 <img src="assets/img/service/serviceCardThumb1_3.jpg" alt="thumb" />
+                                 <img src="assets/img/service/cement industry.jpg" alt="thumb" />
                               </div>
                               <div class="content mt-3">
                                     <h4>
@@ -714,7 +714,7 @@
                           <div class="">
                             <div class="blog-card style1 wow fadeInUp" data-wow-delay="0.3s">
                               <div class="thumb img-shine">
-                                 <img src="assets/img/service/serviceCardThumb1_4.jpg" alt="thumb" />
+                                 <img src="assets/img/service/Beverages Industry.png" alt="thumb" />
                               </div>
                               <div class="content mt-3">
                                     <h4>
@@ -732,7 +732,7 @@
                           <div class="">
                             <div class="blog-card style1 wow fadeInUp" data-wow-delay="0.3s">
                               <div class="thumb img-shine">
-                                 <img src="assets/img/service/serviceCardThumb1_1.jpg" alt="thumb" />
+                                 <img src="assets/img/service/edible oil sector.webp" alt="thumb" />
                               </div>
                               <div class="content mt-3">
                                     <h4>
@@ -750,7 +750,7 @@
                           <div class="">
                             <div class="blog-card style1 wow fadeInUp" data-wow-delay="0.3s">
                               <div class="thumb img-shine">
-                                 <img src="assets/img/service/serviceCardThumb1_1.jpg" alt="thumb" />
+                                 <img src="assets/img/service/paper and pulp industry.jpg" alt="thumb" />
                               </div>
                               <div class="content mt-3">
                                     <h4>
@@ -768,7 +768,7 @@
                           <div class="">
                             <div class="blog-card style1 wow fadeInUp" data-wow-delay="0.3s">
                               <div class="thumb img-shine">
-                                 <img src="assets/img/service/serviceCardThumb1_1.jpg" alt="thumb" />
+                                 <img src="assets/img/service/packaging industry.jpg" alt="thumb" />
                               </div>
                               <div class="content mt-3">
                                     <h4>
@@ -822,7 +822,7 @@
                           <div class="">
                             <div class="blog-card style1 wow fadeInUp" data-wow-delay="0.3s">
                               <div class="thumb img-shine">
-                                 <img src="assets/img/service/serviceCardThumb1_1.jpg" alt="thumb" />
+                                 <img src="assets/img/service/Waste and wastewater.webp" alt="thumb" />
                               </div>
                               <div class="content mt-3">
                                     <h4>
