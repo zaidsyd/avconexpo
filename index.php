@@ -431,7 +431,7 @@
                         <div class="col-xl-4 col-md-6">
                             <div class="service-card style1 wow fadeInUp" data-tilt data-tilt-max="15"
                                 data-wow-delay="0.2s">
-                                <div class="thumb"><img src="assets/img/service/serviceCardThumb1_1.jpg" alt="thumb">
+                                <div class="thumb"><img src="assets/img/service/Business & Technical Cons.jpg" alt="thumb">
                                 </div>
                                 <div class="content">
                                     <h4><a href="business-technical-consulting.php">Business & Technical Consultancy</a>
@@ -469,7 +469,7 @@
                         <div class="col-xl-4 col-md-6">
                             <div class="service-card style1 wow fadeInUp" data-tilt data-tilt-max="15"
                                 data-wow-delay="0.2s">
-                                <div class="thumb"><img src="assets/img/trading&sourcing.png" alt="thumb"> </div>
+                                <div class="thumb"><img src="assets/img/Trading & Sourcing.jpg" alt="thumb"> </div>
                                 <div class="content">
                                     <h4><a href="trading-sourcing.php">Trading & Sourcing</a></h4>
                                     <p class="text"> Avconexpo offers its clients comprehensive and satisfying sourcing
@@ -506,7 +506,7 @@
                         <div class="col-xl-4 col-md-6">
                             <div class="service-card style1 wow fadeInUp" data-tilt data-tilt-max="15"
                                 data-wow-delay="0.2s">
-                                <div class="thumb"><img src="assets/img/service/serviceCardThumb1_4.jpg" alt="thumb">
+                                <div class="thumb"><img src="assets/img/service/sStartup Acc.png" alt="thumb">
                                 </div>
                                 <div class="content">
                                     <h4><a href="startup-accelerator.php">Startup Accelerator</a></h4>
@@ -543,7 +543,7 @@
                         <div class="col-xl-4 col-md-6">
                             <div class="service-card style1 wow fadeInUp" data-tilt data-tilt-max="15"
                                 data-wow-delay="0.2s">
-                                <div class="thumb"><img src="assets/img/waste-management_imresizer.jpg" alt="thumb">
+                                <div class="thumb"><img src="assets/img/Waste and wastewater.webp" alt="thumb">
                                 </div>
                                 <div class="content">
                                     <h4><a href="waste-management.php">Waste Management</a></h4>
@@ -558,22 +558,7 @@
                                 </div>
                             </div>
                         </div>
-                        <!--<div class="col-xl-4 col-md-6">-->
-                        <!--    <div class="service-card style1 wow fadeInUp" data-tilt data-tilt-max="15"-->
-                        <!--        data-wow-delay="0.2s">-->
-                        <!--        <div class="thumb"><img src="assets/img/agriculture-and-hori..._imresizer.jpg" alt="thumb"> </div>-->
-                        <!--        <div class="content">-->
-                        <!--            <h4><a href="horticulture-landscaping.php">Agriculture & Horticulture</a></h4>-->
-                        <!--            <p class="text"> AVCONEXPO supports modern and sustainable agricultural and horticultural practices, ensuring high productivity and environmental responsibility.</p>-->
-                        <!--            <div class="icon"> <i class="icon-serviceIcon1_1"></i> </div>-->
-                        <!--        </div>-->
-                        <!--        <div class="link-meta">-->
-                        <!--            <a href="horticulture-landscaping.php">Read more</a>-->
-                        <!--            <a href="horticulture-landscaping.php"><i-->
-                        <!--                    class="fa-sharp fa-regular fa-arrow-up-right"></i></a>-->
-                        <!--        </div>-->
-                        <!--    </div>-->
-                        <!--</div>-->
+                       
                         <div class="col-xl-4 col-md-6">
                             <div class="service-card style1 wow fadeInUp" data-tilt data-tilt-max="15"
                                 data-wow-delay="0.2s">
@@ -613,22 +598,7 @@
                                 </div>
                             </div>
                         </div>
-                        <!--<div class="col-xl-4 col-md-6">-->
-                        <!--    <div class="service-card style1 wow fadeInUp" data-tilt data-tilt-max="15"-->
-                        <!--        data-wow-delay="0.2s">-->
-                        <!--        <div class="thumb"><img src="assets/img/ecotourism_imresizer.jpg" alt="thumb"> </div>-->
-                        <!--        <div class="content">-->
-                        <!--            <h4><a href="ecotourism.php">Ecotourism</a></h4>-->
-                        <!--            <p class="text"> By integrating responsible travel practices, AVCONEXPO ensures that tourism remains a force for good, benefiting both the environment and local communities.</p>-->
-                        <!--            <div class="icon"> <i class="icon-serviceIcon1_1"></i> </div>-->
-                        <!--        </div>-->
-                        <!--        <div class="link-meta">-->
-                        <!--            <a href="trading-sourcing.php">Read more</a>-->
-                        <!--            <a href="trading-sourcing.php"><i-->
-                        <!--                    class="fa-sharp fa-regular fa-arrow-up-right"></i></a>-->
-                        <!--        </div>-->
-                        <!--    </div>-->
-                        <!--</div>-->
+                       
 
                     </div>
                 </div>
@@ -875,7 +845,7 @@
                                 <div class="">
                                     <div class="blog-card style1 wow fadeInUp" data-wow-delay="0.3s">
                                         <div class="thumb img-shine">
-                                            <img src="assets/img/service/serviceCardThumb1_1.jpg" alt="thumb" />
+                                            <img src="assets/img/service/segment-fmcg.jpg" alt="thumb" />
                                         </div>
                                         <div class="content mt-3">
                                             <h4>
