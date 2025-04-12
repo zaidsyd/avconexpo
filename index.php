@@ -38,11 +38,6 @@
 
 
     <style>
-        .intro-wrapper.style3 .intro-content {
-            position: relative;
-            z-index: 5;
-            padding: 0px 0 0px;
-        }
 
         .blog-card.style1 .thumb {
             height: 200px;
@@ -310,7 +305,7 @@
                 <div class="row g-4">
                     <div class="col-lg-6">
                         <div class="about-image">
-                            <img src="assets/img/service/about us image.jpg" alt="img" class="wow img-custom-anim-left" />
+                            <img src="assets/img/about/03.jpg" alt="img" class="wow img-custom-anim-left" />
                             <div class="border-shape">
                                 <img src="assets/img/about/border-shape.png" alt="img" />
                             </div>

@@ -167,7 +167,7 @@
                                 <img src="assets/img/aboutus/1.jpg" alt="thumb">
                             </div>
                             <div class="thumb2 img-custom-anim-top wow" data-wow-duration="1.5s" data-wow-delay="0.5s">
-                                <img src="assets/img/aboutus/2.jpg" alt="thumb">
+                                <img src="assets/img/service/about us image.jpg" alt="thumb">
                             </div>
                             <div class="shape"><img src="assets/img/shape/aboutShape1_1.png" alt="shape"></div>
                             <div class="counter-box">
