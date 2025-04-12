@@ -123,7 +123,7 @@
         <div class="container">
             <div class="project-details-wrapper">
                 <div class="details-image wow fadeInUp" data-wow-delay=".3s">
-                    <img src="assets/img/project/startup.jpg" alt="img">
+                    <img src="assets/img/service/Startup Acc.png" alt="img">
                 </div>
                 <div class="details-content">
                     <div class="row g-4 justify-content-between">

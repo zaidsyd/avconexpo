@@ -123,7 +123,7 @@
         <div class="container">
             <div class="project-details-wrapper">
                 <div class="details-image wow fadeInUp" data-wow-delay=".3s">
-                    <img src="assets/img/service/waste-management.jpg" alt="img">
+                    <img src="assets/img/service/Waste and wastewater.webp" alt="img">
                 </div>
                 <div class="details-content">
                     <div class="row g-4 justify-content-between">
