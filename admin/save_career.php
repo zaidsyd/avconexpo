@@ -1,38 +1,40 @@
 <?php
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    // Capture form data
-    $name = trim($_POST['name']);
-    $phone = trim($_POST['phone']);
-    $email = trim($_POST['email']);
-    $post = trim($_POST['post']);
-    $added_date = date('Y-m-d H:i:s');
+    // Get form values
+    $name   = $_POST['name'] ?? '';
+    $phone  = $_POST['phone'] ?? '';
+    $email  = $_POST['email'] ?? '';
+    $post   = $_POST['post'] ?? '';
+    $editor = $_POST['editor'] ?? '';
+    $date   = date('Y-m-d H:i:s');
 
-  
-    if (empty($name) || empty($phone) || empty($email) || empty($post)) {
+    // Check required fields
+    if (!$name || !$phone || !$email || !$post || !$editor) {
         echo 'error';
         exit;
     }
 
-    $image_path = '';
-    if (isset($_FILES['image_path']) && $_FILES['image_path']['error'] == 0) {
-        $image_ext = pathinfo($_FILES['image_path']['name'], PATHINFO_EXTENSION);
-        $image_path = 'career_uploads/' . uniqid('career_', true) . '.' . $image_ext;
-        move_uploaded_file($_FILES['image_path']['tmp_name'], $image_path);
+    // File upload
+    $file_path = '';
+    if (!empty($_FILES['image_path']['name'])) {
+        $ext = strtolower(pathinfo($_FILES['image_path']['name'], PATHINFO_EXTENSION));
+        $allowed = ['jpg', 'jpeg', 'png', 'gif', 'pdf', 'doc', 'docx'];
+
+        if (in_array($ext, $allowed)) {
+            $file_path = 'career_uploads/' . uniqid('file_', true) . '.' . $ext;
+            move_uploaded_file($_FILES['image_path']['tmp_name'], $file_path);
+        } else {
+            echo 'invalid_file';
+            exit;
+        }
     }
 
-    include('../db_con.php'); 
+    // DB Insert
+    include('../db_con.php');
+    $stmt = $con->prepare("INSERT INTO add_job (name, phone, email, post, image_path, editor, added_date) VALUES (?, ?, ?, ?, ?, ?, ?)");
+    $stmt->bind_param("sssssss", $name, $phone, $email, $post, $file_path, $editor, $date);
 
-
-    $sql = "INSERT INTO add_job (name, phone, email, post, image_path, added_date) VALUES (?, ?, ?, ?, ?, ?)";
-    $stmt = $con->prepare($sql);
-    $stmt->bind_param("sssssi", $name, $phone, $email, $post, $image_path, $added_date);
-
-    if ($stmt->execute()) {
-        echo 'success'; 
-    } else {
-        echo 'error'; 
-    }
-
+    echo $stmt->execute() ? 'success' : 'error';
 
     $stmt->close();
     $con->close();

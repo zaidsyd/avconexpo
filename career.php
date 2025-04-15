@@ -34,10 +34,22 @@
     <!--<< Main.css >>-->
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <script src="https://cdn.ckeditor.com/ckeditor5/32.0.0/classic/ckeditor.js"></script>
+
     <style>
-    .section-bg2 {
-        background-color: #e9eff2;
-    }
+        .section-bg2 {
+            background-color: #e9eff2;
+        }
+
+        .ck.ck-editor__main>.ck-editor__editable:not(.ck-focused) {
+            border-color: var(--ck-color-base-border);
+            height: 150px;
+        }
+
+        .ck.ck-editor__editable_inline>:last-child {
+            margin-bottom: var(--ck-spacing-large);
+            height: 148px;
+        }
     </style>
 </head>
 
@@ -45,7 +57,7 @@
 
     <!-- Header Section Start -->
     <?php
-        include('header.php');
+    include('header.php');
     ?>
 
     <!-- Search Area Start -->
@@ -122,33 +134,37 @@
                                 <h2>Get in Touch</h2>
                                 <form class="row" method="POST" action="admin/save_career.php" id="enquiryForm"
                                     enctype="multipart/form-data">
-                                    <div class="col-md-12">
+                                    <div class="col-md-6">
                                         <input type="text" name="name" class="form-control"
                                             placeholder="Enter Your Name" required>
                                     </div>
-                                    <div class="col-md-12">
+                                    <div class="col-md-6">
                                         <input type="email" name="email" class="form-control"
                                             placeholder="Enter Your Email" required>
                                     </div>
-                                    <div class="col-md-12">
+                                    <div class="col-md-6">
                                         <input type="number" name="phone" class="form-control"
                                             placeholder="Enter Your Phone Number" required>
                                     </div>
-                                    <div class="col-md-12">
+                                    <div class="col-md-6">
                                         <input type="text" name="post" class="form-control"
                                             placeholder="Enter Apply Post" required>
                                     </div>
                                     <div class="col-12">
                                         <input type="file" name="image_path" class="form-control" required>
                                     </div>
-
-                                    <div class="col-12 form-group mb-0">
+                                    <div class="col-12 mb-2">
+                                        <textarea id="editor" name="editor" rows="10"
+                                            placeholder="Type your message here..."></textarea>
+                                    </div>
+                                    <div class="col-12 form-group mb-0 mt-4">
                                         <button class="theme-btn w-100" type="submit" name="submit">Submit Now <i
                                                 class="fa-solid fa-arrow-right-long"></i></button>
                                     </div>
                                 </form>
                             </div>
                         </div>
+
                         <div class="col-xl-5">
                             <div class="contact-map style2 wow fadeInUp" data-wow-delay=".3s">
                                 <iframe style="width: 100%;height: 587px;" allowfullscreen="" loading="lazy"
@@ -215,8 +231,8 @@
 
     <!-- Footer Section    S T A R T -->
     <?php
-        include('footer.php');
-   ?>
+    include('footer.php');
+    ?>
 
 
 
@@ -249,81 +265,89 @@
     <!--<< Main.js >>-->
     <script src="assets/js/main.js"></script>
     <script>
-    (function() {
-        function c() {
-            var b = a.contentDocument || a.contentWindow.document;
-            if (b) {
-                var d = b.createElement('script');
-                d.innerHTML =
-                    "window.__CF$cv$params={r:'91772c94c9b0185a',t:'MTc0MDQ4MTA0Mi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='../../../cdn-cgi/challenge-platform/h/b/scripts/jsd/b0e4a89976ce/maind41d.js';document.getElementsByTagName('head')[0].appendChild(a);";
-                b.getElementsByTagName('head')[0].appendChild(d)
-            }
-        }
-        if (document.body) {
-            var a = document.createElement('iframe');
-            a.height = 1;
-            a.width = 1;
-            a.style.position = 'absolute';
-            a.style.top = 0;
-            a.style.left = 0;
-            a.style.border = 'none';
-            a.style.visibility = 'hidden';
-            document.body.appendChild(a);
-            if ('loading' !== document.readyState) c();
-            else if (window.addEventListener) document.addEventListener('DOMContentLoaded', c);
-            else {
-                var e = document.onreadystatechange || function() {};
-                document.onreadystatechange = function(b) {
-                    e(b);
-                    'loading' !== document.readyState && (document.onreadystatechange = e, c())
+        (function () {
+            function c() {
+                var b = a.contentDocument || a.contentWindow.document;
+                if (b) {
+                    var d = b.createElement('script');
+                    d.innerHTML =
+                        "window.__CF$cv$params={r:'91772c94c9b0185a',t:'MTc0MDQ4MTA0Mi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='../../../cdn-cgi/challenge-platform/h/b/scripts/jsd/b0e4a89976ce/maind41d.js';document.getElementsByTagName('head')[0].appendChild(a);";
+                    b.getElementsByTagName('head')[0].appendChild(d)
                 }
             }
-        }
-    })();
+            if (document.body) {
+                var a = document.createElement('iframe');
+                a.height = 1;
+                a.width = 1;
+                a.style.position = 'absolute';
+                a.style.top = 0;
+                a.style.left = 0;
+                a.style.border = 'none';
+                a.style.visibility = 'hidden';
+                document.body.appendChild(a);
+                if ('loading' !== document.readyState) c();
+                else if (window.addEventListener) document.addEventListener('DOMContentLoaded', c);
+                else {
+                    var e = document.onreadystatechange || function () { };
+                    document.onreadystatechange = function (b) {
+                        e(b);
+                        'loading' !== document.readyState && (document.onreadystatechange = e, c())
+                    }
+                }
+            }
+        })();
     </script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script>
-    $(document).ready(function() {
-        $('#enquiryForm').submit(function(e) {
-            e.preventDefault();
-            var formData = new FormData(this);
+        $(document).ready(function () {
+            $('#enquiryForm').submit(function (e) {
+                e.preventDefault();
+                var formData = new FormData(this);
 
-            $.ajax({
-                url: 'admin/save_career.php',
-                type: 'POST',
-                data: formData,
-                processData: false,
-                contentType: false,
-                success: function(response) {
-                    console.log(response);
-                    if (response == 'success') {
-                        Swal.fire({
-                            icon: 'success',
-                            title: 'Message Sent!',
-                            text: 'Your message has been sent successfully.',
-                        }).then(function() {
-                            $('#enquiryForm')[0].reset();
-                        });
-                    } else {
+                $.ajax({
+                    url: 'admin/save_career.php',
+                    type: 'POST',
+                    data: formData,
+                    processData: false,
+                    contentType: false,
+                    success: function (response) {
+                        console.log(response);
+                        if (response == 'success') {
+                            Swal.fire({
+                                icon: 'success',
+                                title: 'Message Sent!',
+                                text: 'Your message has been sent successfully.',
+                            }).then(function () {
+                                $('#enquiryForm')[0].reset();
+                            });
+                        } else {
+                            Swal.fire({
+                                icon: 'error',
+                                title: 'Oops...',
+                                text: 'Invalid file type. Please upload PDF, image, or doc files only.',
+                            });
+                        }
+                    },
+                    error: function (xhr, status, error) {
+                        console.error("AJAX Error: ", status, error);
                         Swal.fire({
                             icon: 'error',
                             title: 'Oops...',
-                            text: 'Something went wrong. Please try again later.',
+                            text: 'Invalid file type. Please upload PDF, image, or doc files only.',
                         });
                     }
-                },
-                error: function(xhr, status, error) {
-                    console.error("AJAX Error: ", status, error);
-                    Swal.fire({
-                        icon: 'error',
-                        title: 'Oops...',
-                        text: 'Something went wrong. Please try again later.',
-                    });
-                }
+                });
             });
         });
-    });
     </script>
+    <script>
+        ClassicEditor
+            .create(document.querySelector('#editor'))
+            .catch(error => {
+                console.error(error);
+            });
+    </script>
+
 </body>
 
 </html>
