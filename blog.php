@@ -383,7 +383,7 @@ if (isset($_GET['page_url'])) {
                                 <h4><a href="#"><?php echo $blog['blog_heading'] ?></a>
                                 </h4>
                                 <p style="color: black !important;margin-bottom: 9px; ">
-                                    <?php echo $blog['blog_desc_two'] ?>
+                                    <?php echo $blog['job_description'] ?>
                                 </p>
                             </div>
                         </div>
@@ -560,12 +560,7 @@ if (isset($_GET['page_url'])) {
                                         About Us
                                     </a>
                                 </li>
-                               <!-- <li>
-                                    <a href="https://www.avconexpo.com/gallery.php">
-                                        <i class="fa-solid fa-chevron-right"></i>
-                                        Gallery
-                                    </a>
-                                </li>-->
+                               
                                 <li>
                                     <a href="https://www.avconexpo.com/contact.php">
                                         <i class="fa-solid fa-chevron-right"></i>

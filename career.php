@@ -34,7 +34,6 @@
     <!--<< Main.css >>-->
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
-    <script src="https://cdn.ckeditor.com/ckeditor5/32.0.0/classic/ckeditor.js"></script>
 
     <style>
         .section-bg2 {
@@ -49,6 +48,68 @@
         .ck.ck-editor__editable_inline>:last-child {
             margin-bottom: var(--ck-spacing-large);
             height: 148px;
+        }
+
+        .service-wrapper-4 .service-box-items {
+            padding: 30px;
+            background-color: #e9eff2;
+            border-radius: 8px;
+
+        }
+
+        .row-flex {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .service-wrapper-4 .service-box-items .content .date {
+            margin-top: 20px;
+            color: #041b16;
+            font-weight: bold;
+        }
+
+
+        .service-wrapper-4 .service-box-items .content .link {
+            margin-top: 20px;
+            border: 1px solid;
+            padding: 6px 14px;
+            background: #f15e22;
+            color: white !important;
+            border-radius: 30px;
+        }
+
+        .service-wrapper-4 .service-box-items .content .link a:hover {
+            color: white;
+        }
+
+        .service-wrapper-4 .service-box-items .content .link a {
+            color: #fff;
+
+        }
+
+        p {
+
+            text-align: justify;
+        }
+
+        .view-more-btn {
+            border: none;
+            background: none;
+            color: blue;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        #shortDesc_<?= $job_title ?>,
+        #fullDesc_<?= $job_title ?> {
+            transition: max-height 0.3s ease-in-out;
+        }
+
+        #fullDesc_<?= $job_title ?> {
+            max-height: 200px;
+            overflow: hidden;
         }
     </style>
 </head>
@@ -98,9 +159,110 @@
             </div>
         </div>
     </div>
+    <!-- Service Section -->
+    <section class="service-section fix section-padding" id="service">
+        <div class="container custom-container-2">
+            <div class="service-wrapper-4">
+                <div class="row g-5">
 
+                    <div class="col-lg-12">
+                        <div class="row g-4">
+                            <?php
+                            include('db_con.php');
+                            $sql = "SELECT job_post.job_title AS job_title, 
+                              short_job_description,
+                              job_description,
+                               job_post.added_date
+                                FROM job_post
+                              
+                                GROUP BY job_post.id  
+                                ORDER BY job_post.added_date DESC 
+                                LIMIT 6";
+                            $result = $con->query($sql);
+
+                            if ($result->num_rows > 0)
+                            {
+                                echo '<div class="row g-4">';
+
+                                while ($row = $result->fetch_assoc())
+                                {
+                                    $job_title = $row['job_title'];
+                                    $short_job_description = $row['short_job_description'];
+                                    $job_description = $row['job_description'];
+                                    $added_date = date("M d, Y", strtotime($row['added_date']));
+                                    ?>
+                                    <div class="col-xl-4 col-lg-6 col-md-6">
+                                        <div class="service-box-items wow fadeInUp" data-wow-delay=".3s">
+                                            <div class="date">
+                                                <img src="https://img.icons8.com/external-yogi-aprelliyanto-basic-outline-yogi-aprelliyanto/30/external-calender-time-and-date-yogi-aprelliyanto-basic-outline-yogi-aprelliyanto.png"
+                                                    alt="icon">
+                                                &nbsp;&nbsp;<?= $added_date; ?>
+                                            </div>
+                                            <div class="content">
+
+                                                <h3>
+                                                    <a href="job/<?= $job_title; ?>">
+                                                        <?= ucwords(str_replace("-", " ", $job_title)); ?>
+                                                    </a>
+                                                </h3>
+
+
+                                                <p id="shortDesc_<?= $job_title ?>">
+                                                    <?= implode(' ', array_slice(explode(' ', $short_job_description), 0, 16)) . '..'; ?>
+                                                    <button onclick="toggleDesc('<?= $job_title ?>')" class="view-more-btn">View
+                                                        More</button>
+                                                </p>
+
+
+                                                <p id="fullDesc_<?= $job_title ?>" style="display:none;">
+                                                    <?= $short_job_description; ?>
+                                                    <button onclick="toggleDesc('<?= $job_title ?>')" class="view-more-btn">View
+                                                        Less</button>
+                                                </p>
+
+                                                <div class="row-flex">
+
+                                                    <div class="link">
+                                                        <a href="job/<?= $job_title; ?>">
+                                                            Apply Now <i class="fa-solid fa-arrow-up-right"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <?php
+                                }
+                                echo '</div>';
+                            } else
+                            {
+                                echo "<p class='text-black mt-2 text-center blog-not-found mt-4'>No Job found for today</p>";
+                            }
+                            ?>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        function toggleDesc(jobTitle) {
+            var shortDesc = document.getElementById("shortDesc_" + jobTitle);
+            var fullDesc = document.getElementById("fullDesc_" + jobTitle);
+
+            if (shortDesc.style.display === "none") {
+                shortDesc.style.display = "block";
+                fullDesc.style.display = "none";
+            } else {
+                shortDesc.style.display = "none";
+                fullDesc.style.display = "block";
+            }
+        }
+    </script>
     <!-- Contact Section    S T A R T -->
-    <div class="contact-form-section section-padding fix">
+    <div class="contact-form-section fix mb-5">
         <div class="contact-form-container-wrapper style1">
             <div class="container-fluid">
                 <div class="contact-title-wrapper pb-425 section-bg2 section-padding border-radius">
@@ -134,29 +296,27 @@
                                 <h2>Get in Touch</h2>
                                 <form class="row" method="POST" action="admin/save_career.php" id="enquiryForm"
                                     enctype="multipart/form-data">
-                                    <div class="col-md-6">
+                                    <div class="col-md-12">
                                         <input type="text" name="name" class="form-control"
                                             placeholder="Enter Your Name" required>
                                     </div>
-                                    <div class="col-md-6">
+                                    <div class="col-md-12">
                                         <input type="email" name="email" class="form-control"
                                             placeholder="Enter Your Email" required>
                                     </div>
-                                    <div class="col-md-6">
+                                    <div class="col-md-12">
                                         <input type="number" name="phone" class="form-control"
                                             placeholder="Enter Your Phone Number" required>
                                     </div>
-                                    <div class="col-md-6">
+                                    <div class="col-md-12">
                                         <input type="text" name="post" class="form-control"
                                             placeholder="Enter Apply Post" required>
                                     </div>
                                     <div class="col-12">
-                                        <input type="file" name="image_path" class="form-control" required>
+                                        <input type="file" name="image_path" class="form-control" required
+                                            accept=".jpg,.jpeg,.png,.gif,.pdf,.doc,.docx">
                                     </div>
-                                    <div class="col-12 mb-2">
-                                        <textarea id="editor" name="editor" rows="10"
-                                            placeholder="Type your message here..."></textarea>
-                                    </div>
+
                                     <div class="col-12 form-group mb-0 mt-4">
                                         <button class="theme-btn w-100" type="submit" name="submit">Submit Now <i
                                                 class="fa-solid fa-arrow-right-long"></i></button>
@@ -340,14 +500,16 @@
             });
         });
     </script>
-    <script>
-        ClassicEditor
-            .create(document.querySelector('#editor'))
-            .catch(error => {
-                console.error(error);
-            });
-    </script>
 
+    <script>
+        document.querySelector('input[name="image_path"]').addEventListener('change', function () {
+            const file = this.files[0];
+            if (file && file.size > 512000) {
+                alert("File size must be less than or equal to 500KB.");
+                this.value = "";
+            }
+        });
+    </script>
 </body>
 
 </html>

@@ -43,21 +43,29 @@
                               <td><?php echo $row['post']; ?></td>
                               <td>
                                  <?php
-                                 $file = $row['image_path'];
-                                 $ext = strtolower(pathinfo($file, PATHINFO_EXTENSION));
+                                 $career = $row['image_path'];
 
-                                 if (in_array($ext, ['jpg', 'jpeg', 'png', 'gif']))
+                                 if ($career)
                                  {
-                                    echo '<img src="' . $file . '" alt="Image" width="100px" height="70px">';
-                                 } elseif ($ext === 'pdf')
-                                 {
-                                    echo '<a href="' . $file . '" target="_blank">📄 View PDF</a>';
-                                 } elseif (in_array($ext, ['doc', 'docx']))
-                                 {
-                                    echo '<a href="' . $file . '" target="_blank">📄 View Document</a>';
+                                    $ext = pathinfo($career, PATHINFO_EXTENSION);
+                                    $ext = strtolower($ext);
+
+                                    if (in_array($ext, ['jpg', 'jpeg', 'png', 'gif']))
+                                    {
+                                       echo "<img src='$career' style='width:100px;'>";
+                                    } elseif ($ext == 'pdf')
+                                    {
+                                       echo "<a href='$career' target='_blank'><img width='50' height='50' src='https://img.icons8.com/ios-filled/50/FA5252/pdf--v1.png' /></a>";
+                                    } elseif (in_array($ext, ['doc', 'docx']))
+                                    {
+                                       echo "<a href='$career' target='_blank'><img width='50' height='50' src='https://img.icons8.com/glyph-neue/64/FA5252/word.png' /></a>";
+                                    } else
+                                    {
+                                       echo "<a href='$career' target='_blank'><img width='50' height='50' src='https://img.icons8.com/glyph-neue/64/FA5252/word.png' /></a>";
+                                    }
                                  } else
                                  {
-                                    echo 'No preview';
+                                    echo "No file";
                                  }
                                  ?>
                               </td>

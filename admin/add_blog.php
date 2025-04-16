@@ -172,9 +172,7 @@
         color: #000000 !important; /* Set your preferred color */
         font-weight: normal !important; /* Optional: Change the font-weight as needed */
     }
-    li {
-    list-style: black;
-}
+    
 .note-editor ol {
     list-style-type: disc !important;
     color:black;

@@ -68,12 +68,22 @@
 							<span class="nav-text">Contact List</span>
 						</a>
                     </li>
-                  
                     <li class=""><a href="job_list.php">
 							<i class="flaticon-381-controls-3"></i>
-							<span class="nav-text">Apply Job List</span>
+							<span class="nav-text">Career List</span>
 						</a>
                     </li>
+                    <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+                            <i class="flaticon-381-heart"></i>
+                            <span class="nav-text">Jobs</span>
+                        </a>
+                        <ul aria-expanded="false">
+                            <li><a href="add_job_post.php">Add New Job Post</a></li>
+                            <li><a href="job_post_list.php">Job Post List</a></li>
+                            <li><a href="job_form_list.php">Applied Job List</a></li>
+                        </ul>
+                    </li>
+                   
                     
                 </ul>
         
